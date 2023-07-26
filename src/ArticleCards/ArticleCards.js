@@ -11,7 +11,7 @@ function ArticleCards({ articles }) {
         date={article.publishedAt}
         description={article.description}
         id={article.source.id}
-        key={article.source.id}
+        key={article.title}
       />
     )
 

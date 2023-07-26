@@ -4,8 +4,7 @@
   padding: 10px;
 }
 
-.image {
+.image, .no-card-img {
   height: 275px;
-  width: 415px;
   margin: 0px 0px 0px 7px;
 }

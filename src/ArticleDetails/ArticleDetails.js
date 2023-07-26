@@ -1,5 +1,5 @@
 import './ArticleDetails.css';
-
+import noImage from '../noImage.png'
 function formatReadableDate(isoDate) {
   const date = new Date(isoDate);
 
@@ -21,7 +21,11 @@ function ArticleDetails({ title, image, date, description }) {
       <p>{formattedDate}</p>
       <p>{description}</p>
       <span>
-        <img className='image' src={image} alt="Article Image"/>
+          {image ? (
+            <img className='image' src={image} alt="Article Image"/>
+          ) : (
+          <img className="no-card-img" src={noImage} alt="no image" />
+          )}
       </span>
     </div>
   )

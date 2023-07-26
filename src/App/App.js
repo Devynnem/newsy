@@ -22,27 +22,38 @@ function App() {
         article.description.toLowerCase().includes(lowerCaseSearchValue)
     );
   }
-
-  const fetchData = () => {
-    const thisData = mockData.articles.map(article => {
-      return article
+  const fetchAllArticles = async () => {
+    return fetch("https://newsapi.org/v2/everything?q=apple&from=2023-07-25&to=2023-07-25&sortBy=popularity&apiKey=5c88a8ad462040739d32abd6ea2ff125")
+    .then(response => {
+      if(response.ok) {
+        return response.json()
+      } else {
+        throw new Error(response.message)
+      }
     })
-    console.log(thisData)
-    setArticles(thisData);
-    setInitialArticles(thisData);
+    .then(data => data)
+    .catch(error => {
+      throw new Error(error)
+    })
+  }
+
+  const fetchData = async () => {
+    try {
+      const data = await fetchAllArticles();
+      const thisData = data.articles.map(article => {
+        return article
+      })
+      console.log(thisData)
+      setArticles(thisData);
+      setInitialArticles(thisData);
+    } catch (error) {
+      console.log(error, "fetch");
+    }
   }
 
   useEffect(() => {
     fetchData()
   }, []);
-
-  // const handleSearch = (searchValue) => {
-  //   const searchResultsData = searchResults(searchValue);
-  //   setFilteredArticle(searchResultsData);
-  //   if (searchResultsData.length === 0) {
-  //     setArticles([]);
-  //   }
-  // };
 
   const handleSearch = (searchValue) => {
     const searchResultsData = searchResults(searchValue);
