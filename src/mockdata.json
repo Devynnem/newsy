@@ -1,0 +1,110 @@
+{
+  "status": "ok",
+  "totalResults": 2085,
+  "articles": [
+  {
+  "source": {
+        "id": "engadget",
+        "name": "Engadget"
+      },
+      "author": "Mat Smith",
+      "title": "The Morning After: Our verdict on Sony’s newest noise-canceling earbuds",
+      "description": "Over the years of true wireless earbuds, Sony has consistently kept its place among the best with its 1000X series. Just when it seems like others may gain ground through software tricks or beefed-up noise-cancellation, the company adds new features or improv…",
+      "url": "https://www.engadget.com/the-morning-after-our-verdict-on-sonys-newest-noise-canceling-earbuds-111504008.html",
+      "urlToImage": "https://s.yimg.com/uu/api/res/1.2/sz364z4eK94Nk3lAD7ozIg--~B/Zmk9ZmlsbDtoPTYzMDtweW9mZj0wO3c9MTIwMDthcHBpZD15dGFjaHlvbg--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2023-07/ec3bea90-2a1a-11ee-a3ff-6dfd5d74dd57.cf.jpg",
+      "publishedAt": "2023-07-25T11:15:04Z",
+      "content": "Over the years of true wireless earbuds, Sony has consistently kept its place among the best with its 1000X series. Just when it seems like others may gain ground through software tricks or beefed-up… [+3941 chars]"
+    },
+  {
+  "source": {
+        "id": "wired",
+        "name": "Wired"
+      },
+      "author": "Max G. Levy",
+      "title": "Coming Soon Near You: Bears",
+      "description": "Extreme heat and other weather events are driving bears closer to humans’ campgrounds and hiking trails—and that’s no good for either species",
+      "url": "https://www.wired.com/story/coming-soon-near-you-bears/",
+      "urlToImage": "",
+      "publishedAt": "2023-07-25T11:00:00Z",
+      "content": "Steps away from the public restrooms in Yosemite Village, a buzzy stop in Yosemite National Parks iconic valley, sits a brown metal dumpster. Visitors reach up to open the trash chute. Their peanut b… [+2812 chars]"
+    },
+  {
+  "source": {
+        "id": "the-verge",
+        "name": "The Verge"
+      },
+      "author": "Monica Chin",
+      "title": "How to use Safari Tab Groups",
+      "description": "Tab Groups can help you keep your Safari tabs organized for different projects or use cases. They sync between Apple devices, and they’re super easy to create.",
+      "url": "https://www.theverge.com/23803135/safari-tab-groups-how-to",
+      "urlToImage": "https://cdn.vox-cdn.com/thumbor/2zETfkDzPTnLWM5l1FLCva_dpmo=/0x0:2040x1360/1200x628/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/23952314/HT016_macOS_0008.jpg",
+      "publishedAt": "2023-07-25T19:12:51Z",
+      "content": "How to use Safari Tab Groups\r\nHow to use Safari Tab Groups\r\n / If youre a Safari user, Tab Groups can help you keep your life organized and your desktop clean.\r\nByMonica Chin, a senior reviewer cover… [+3368 chars]"
+    },
+  {
+  "source": {
+        "id": null,
+        "name": "Gizmodo.com"
+      },
+      "author": "Florence Ion",
+      "title": "Android's Nearby Share Lets You 'AirDrop' Files Between Phones and PCs",
+      "description": "I’m an image goblin. I can’t help it: I see something funny or cute, and I’ll scrape it from the internet to share with friends and family, far and wide. But I often forget that I saved the image to a particular phone until the next day, and by then, I’m usua…",
+      "url": "https://gizmodo.com/android-airdrop-nearby-share-phone-pc-1850675764",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/df4201914b64971ac2d8789d166c4f3a.jpg",
+      "publishedAt": "2023-07-25T21:38:00Z",
+      "content": "Im an image goblin. I cant help it: I see something funny or cute, and Ill scrape it from the internet to share with friends and family, far and wide. But I often forget that I saved the image to a p… [+3761 chars]"
+    },
+  {
+  "source": {
+        "id": "ars-technica",
+        "name": "Ars Technica"
+      },
+      "author": "Samuel Axon",
+      "title": "How developers will test their apps before Vision Pro launches",
+      "description": "Apple opened up access to three ways to test apps on real hardware.",
+      "url": "https://arstechnica.com/gadgets/2023/07/how-developers-will-test-their-apps-before-vision-pro-launches/",
+      "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2023/07/vision-desk-b_2x-760x380.webp",
+      "publishedAt": "2023-07-25T20:36:25Z",
+      "content": "Enlarge/ A promotional image made by Apple to convey what the in-person developer labs for Vision Pro will be like.\r\n2 with \r\nApple needs third-party apps for Vision Pro when it launches next year, b… [+3711 chars]"
+    },
+  {
+  "source": {
+        "id": "ars-technica",
+        "name": "Ars Technica"
+      },
+      "author": "Jennifer Ouellette",
+      "title": "Catching up with Foundation S2 as the Second Crisis unfolds",
+      "description": "The second season has faster pacing, more linear storytelling, and bits of levity.",
+      "url": "https://arstechnica.com/culture/2023/07/catching-up-with-foundation-s2-as-the-second-crisis-unfolds/",
+      "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2023/07/found1-760x380.jpg",
+      "publishedAt": "2023-07-25T12:52:53Z",
+      "content": "Enlarge/ Lee Pace as the latest incarnation of Brother Day, one of a trio of ruling Cleons in Apple TV's Foundation.\r\n11 with \r\nWe're now two episodes into the second season of Foundation, Apple TV's… [+4488 chars]"
+    },
+  {
+  "source": {
+        "id": null,
+        "name": "Android Central"
+      },
+      "author": "tips@androidcentral.com (Vishnu Sarangapurkar)",
+      "title": "Spotify bumps up its Premium pricing for the first time",
+      "description": "Music streaming services are on the verge of increasing their Premium offerings lately. Apple Music last year, YouTube Music this year raised their prices, and Spotify now joins the list as well.",
+      "url": "https://www.androidcentral.com/streaming-tv/spotify-to-bump-up-its-premium-pricing",
+      "urlToImage": "https://cdn.mos.cms.futurecdn.net/nS4bjbyKmiSYtyq4VFAYJF-1200-80.jpeg",
+      "publishedAt": "2023-07-25T02:48:48Z",
+      "content": "<ul><li>Spotify Premium plans will increase in price by $1, though subscribers will get a one-month grace period before having to pay it.</li><li>The new tier pricing will take effect in over 50 coun… [+2057 chars]"
+    },
+  {
+  "source": {
+        "id": null,
+        "name": "Android Central"
+      },
+      "author": "tips@androidcentral.com (Nickolas Diaz)",
+      "title": "One UI 6 beta may soon reach the Galaxy S23 in the US and India",
+      "description": "Samsung could be planning on starting its One UI 6 beta program soon as community forum sections have appeared.",
+      "url": "https://www.androidcentral.com/apps-software/one-ui-6-beta-nears-release",
+      "urlToImage": "https://cdn.mos.cms.futurecdn.net/9HXcBF3Qr6oUyAg75TPojg-1200-80.jpg",
+      "publishedAt": "2023-07-25T16:54:40Z",
+      "content": "<ul><li>Samsung has created forum sections for the One UI 6 beta program in the U.S. and India for the Galaxy S23 series.</li><li>While later than expected, this could mean the company is planning on… [+1986 chars]"
+    }
+  ]
+}
