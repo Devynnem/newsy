@@ -6,7 +6,7 @@ function ArticleCards({ articles }) {
   const articleDetails = articles.map((article, index) => {
     return (
       <div>
-        <NavLink key={index} to={`/article/${index}`}></NavLink>
+        {/* <NavLink key={index} to={`/article/${index}`}></NavLink> */}
         <ArticleDetails 
         image={article.urlToImage}
         title={article.title}

@@ -26,6 +26,7 @@ const Search = (props) => {
         />
         <button className="search-query-button" onClick={(event) => handleSubmit(query, event)}>🔎</button>
       </form>
+      <button className="back-to-all-button" id="backToAll" onClick={(event) => props.reset(event)}>Back to All Articles</button>
     </div>
   )
 

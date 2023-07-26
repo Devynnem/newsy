@@ -23,7 +23,15 @@ function App() {
         article.title.toLowerCase().includes(lowerCaseSearchValue) ||
         article.description.toLowerCase().includes(lowerCaseSearchValue)
     );
-  }
+  };
+
+  const resetResults = (event) => {
+    event.preventDefault()
+    setFilteredArticle([])
+    setArticles(initialArticles)
+    console.log(articles, "articles")
+  };
+
   const fetchAllArticles = async () => {
     return fetch("https://newsapi.org/v2/everything?q=apple&from=2023-07-25&to=2023-07-25&sortBy=popularity&apiKey=5c88a8ad462040739d32abd6ea2ff125")
     .then(response => {
@@ -78,10 +86,12 @@ function App() {
     }
   };
 
+  
+
   return (
     <main className='app'>
       <h1 className='header'>Newsy</h1>
-      <Search search={handleSearch} />
+      <Search search={handleSearch} reset={resetResults}/>
         {showNoResultsMessage && <p>Sorry, no results found!</p>}
         {/* <Link to="/articles">Show all articles</Link> */}
         {filteredArticle.length > 0 ? (
