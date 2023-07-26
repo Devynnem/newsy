@@ -78,21 +78,18 @@ function App() {
     }
   };
 
-
-
-
   return (
     <main className='app'>
       <h1 className='header'>Newsy</h1>
       <Search search={handleSearch} />
         {showNoResultsMessage && <p>Sorry, no results found!</p>}
+        {/* <Link to="/articles">Show all articles</Link> */}
         {filteredArticle.length > 0 ? (
         <Routes>
           <Route
             path="/"
             element={
               <>
-                <Link to="/articles">Show all articles</Link>
                 <ArticleCards articles={filteredArticle} />
               </>
             }

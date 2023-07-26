@@ -1,24 +1,27 @@
 import ArticleDetails from '../ArticleDetails/ArticleDetails';
 import './ArticleCards.css';
+import { NavLink } from 'react-router-dom';
 
 function ArticleCards({ articles }) {
-  // console.log(articles[0].author, "line four cards")
-  const articleDetails = articles.map(article => {
+  const articleDetails = articles.map((article, index) => {
     return (
-      <ArticleDetails 
+      <div>
+        <NavLink key={index} to={`/article/${index}`}></NavLink>
+        <ArticleDetails 
         image={article.urlToImage}
         title={article.title}
         date={article.publishedAt}
         description={article.description}
         id={article.source.id}
-        key={article.title}
-      />
+        key={index}
+        />
+      </div>
     )
 
   })
   return (
     <div className='articles-container'>
-      {articleDetails}
+        {articleDetails}
     </div>
   )
 }

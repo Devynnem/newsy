@@ -1,6 +1,8 @@
 import './ArticleDetails.css';
 import noImage from '../noImage.png'
-function formatReadableDate(isoDate) {
+
+
+export function formatReadableDate(isoDate) {
   const date = new Date(isoDate);
 
   const options = {
