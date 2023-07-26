@@ -4,12 +4,14 @@ import '../ArticleCards/ArticleCards'
 import './App.css';
 import ArticleCards from '../ArticleCards/ArticleCards';
 import Search from '../Search/Search';
+import { Routes, Route, Link } from 'react-router-dom';
 
 function App() {
   const [articles, setArticles] = useState([]);
   const [singleArticle, setSingleArticle] = useState({});
   const [initialArticles, setInitialArticles] = useState([]);
   const [filteredArticle, setFilteredArticle] = useState([]);
+  const [searchQuery, setSearchQuery] = useState('');
   const [showNoResultsMessage, setShowNoResultsMessage] = useState(false);
 
 
@@ -55,25 +57,55 @@ function App() {
     fetchData()
   }, []);
 
+  // const handleSearch = (searchValue) => {
+  //   setFilteredArticle(searchResults(searchValue));
+  //   setShowNoResultsMessage(searchValue.trim() !== '' && filteredArticle.length === 0);
+  // }
+
   const handleSearch = (searchValue) => {
-    const searchResultsData = searchResults(searchValue);
-    setFilteredArticle(searchResultsData);
-    setShowNoResultsMessage(searchValue.trim() !== "" && searchResultsData.length === 0);
+    if (searchValue.trim() !== "") {
+      const searchResultsData = searchResults(searchValue);
+      setFilteredArticle(searchResultsData);
+      setShowNoResultsMessage(searchResultsData.length === 0);
+      if (searchResultsData.length === 0) {
+        setTimeout(() => {
+          setShowNoResultsMessage(false);
+        }, 3000);
+      }
+    } else {
+      setFilteredArticle(initialArticles);
+      setShowNoResultsMessage(false);
+    }
   };
+
+
+
 
   return (
     <main className='app'>
       <h1 className='header'>Newsy</h1>
       <Search search={handleSearch} />
-      {showNoResultsMessage && <p>Sorry, no results found!</p>}
-      {filteredArticle.length > 0 ? (
-        <ArticleCards articles={filteredArticle} />
-      ) : (
+        {showNoResultsMessage && <p>Sorry, no results found!</p>}
+        {filteredArticle.length > 0 ? (
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Link to="/articles">Show all articles</Link>
+                <ArticleCards articles={filteredArticle} />
+              </>
+            }
+          />
+          <Route path="/articles" element={<ArticleCards articles={articles} />} />
+        </Routes>
+      ) : articles.length > 0 ? (
         <ArticleCards articles={articles} />
+      ) : (
+        <p>Loading Articles...</p>
       )}
     </main>
   )
-
 }
 
 
