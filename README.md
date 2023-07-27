@@ -22,10 +22,6 @@ Next: ```npm start``` in the terminal to see the HTML page
 
 ```Control + C``` is the command to stop running the local server
 
-## Deployed Link
-
-You can also visit the web page at this [link]()
-
 ## Preview of Setup and Finished App
 
 ![preview-of-setup](./src/project-board.jpeg)
