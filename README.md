@@ -1,6 +1,3 @@
-
-Steps 2 and 3 are great places to talk about any challenges you experienced and how you overcame them, what resources you used, why you choose certain design decisions (page layout, filter options, routes, schema, etc.), and what features or changes you would implement next if you had more time to work on it.
-
 # 📰 Newsy☕️
 
 ## Abstract
