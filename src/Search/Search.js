@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import './Search.css'
 
 const Search = (props) => {
   const [query, setQuery] = useState('');
+  const navigate = useNavigate();
   const handleSubmit = (query, event) => {
     event.preventDefault();
     props.search(query);
@@ -10,6 +12,11 @@ const Search = (props) => {
   }
   const clearInputs = () => {
     setQuery('')
+  }
+
+  const handleBackToAll = () => {
+    props.reset();
+    navigate('/')
   }
 
   return (
@@ -26,10 +33,9 @@ const Search = (props) => {
         />
         <button className="search-query-button" onClick={(event) => handleSubmit(query, event)}>🔎</button>
       </form>
-      <button className="back-to-all-button" id="backToAll" onClick={(event) => props.reset(event)}>Back to All Articles</button>
+      <button className="back-to-all-button" id="backToAll" onClick={handleBackToAll}>Back to All Articles</button>
     </div>
   )
-
 }
 
 

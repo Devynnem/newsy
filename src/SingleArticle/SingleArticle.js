@@ -4,6 +4,7 @@ import { formatReadableDate } from '../ArticleDetails/ArticleDetails';
 
 
 const SingleArticle = ({ article }) => {
+  console.log(article.title, 'singleArticle')
   return (
     <div className='single-article'>
       <h2>{article.title}</h2>

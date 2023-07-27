@@ -5,3 +5,19 @@
   /* align-items: center; */
   margin: 10vh 3vw 8vh 4vw;
 }
+
+.search-query-button {
+  cursor: pointer;
+}
+
+.back-to-all-button {
+  height: 33px;
+  width: 125px;
+  margin-top: 7px;
+  /* background: #ffffff; */
+  color: #000000;
+  /* border: 1px #767676 solid;
+  border-radius: 25px; */
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}

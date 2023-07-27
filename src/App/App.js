@@ -5,13 +5,13 @@ import './App.css';
 import ArticleCards from '../ArticleCards/ArticleCards';
 import Search from '../Search/Search';
 import { Routes, Route, Link } from 'react-router-dom';
+import SingleArticle from '../SingleArticle/SingleArticle';
 
 function App() {
   const [articles, setArticles] = useState([]);
-  const [singleArticle, setSingleArticle] = useState({});
+  const [selectedArticle, setSelectedArticle] = useState({});
   const [initialArticles, setInitialArticles] = useState([]);
   const [filteredArticle, setFilteredArticle] = useState([]);
-  const [searchQuery, setSearchQuery] = useState('');
   const [showNoResultsMessage, setShowNoResultsMessage] = useState(false);
 
 
@@ -26,10 +26,9 @@ function App() {
   };
 
   const resetResults = (event) => {
-    event.preventDefault()
+    // event.preventDefault()
     setFilteredArticle([])
     setArticles(initialArticles)
-    console.log(articles, "articles")
   };
 
   const fetchAllArticles = async () => {
@@ -65,10 +64,15 @@ function App() {
     fetchData()
   }, []);
 
-  // const handleSearch = (searchValue) => {
-  //   setFilteredArticle(searchResults(searchValue));
-  //   setShowNoResultsMessage(searchValue.trim() !== '' && filteredArticle.length === 0);
-  // }
+  const handleArticleClick = (index) => {
+    const article = articles[index];
+    setSelectedArticle(article);
+    console.log(selectedArticle, "in app")
+  };
+
+  // useEffect(() => {
+  //   console.log(selectedArticle, "in app");
+  // }, [selectedArticle]);
 
   const handleSearch = (searchValue) => {
     if (searchValue.trim() !== "") {
@@ -91,26 +95,12 @@ function App() {
   return (
     <main className='app'>
       <h1 className='header'>Newsy</h1>
-      <Search search={handleSearch} reset={resetResults}/>
-        {showNoResultsMessage && <p>Sorry, no results found!</p>}
-        {/* <Link to="/articles">Show all articles</Link> */}
-        {filteredArticle.length > 0 ? (
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <ArticleCards articles={filteredArticle} />
-              </>
-            }
-          />
-          <Route path="/articles" element={<ArticleCards articles={articles} />} />
-        </Routes>
-      ) : articles.length > 0 ? (
-        <ArticleCards articles={articles} />
-      ) : (
-        <p>Loading Articles...</p>
-      )}
+      <Search search={handleSearch} reset={resetResults} />
+      {showNoResultsMessage && <p className='no-results'>Sorry, no results found!</p>}
+      <Routes>
+        <Route path="/" element={<ArticleCards articles={filteredArticle.length > 0 ? filteredArticle : articles} onArticleClick={handleArticleClick} />} />
+        <Route path="/articles/:index" element={selectedArticle ? <SingleArticle article={selectedArticle} /> : null} />
+      </Routes>
     </main>
   )
 }
