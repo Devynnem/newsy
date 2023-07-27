@@ -1,70 +1,51 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Steps 2 and 3 are great places to talk about any challenges you experienced and how you overcame them, what resources you used, why you choose certain design decisions (page layout, filter options, routes, schema, etc.), and what features or changes you would implement next if you had more time to work on it.
 
-## Available Scripts
+# 📰 Newsy☕️
 
-In the project directory, you can run:
+## Abstract
 
-### `npm start`
+This web application was designed as part of a take home challenge. I was required to pull various news articles from an api and display them on a home page. The user is able to click on each article and discover more information about the article as well as go to the site where it was originally published. I also needed to create functionality that allowed the user to search terms or phrases to see if any articles matched what they were looking for.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This web app is also responsive for all device usage.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup
 
-### `npm test`
+Fork and clone this [repo](https://github.com/Devynnem/newsy)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Do the following steps for the repo.
 
-### `npm run build`
+In your forked GitHub repository, click the code drop-down menu and copy the SSH key. 
+Open the terminal on your machine and navigate to the containing directory you’d like - to clone the repository folder and its contents to. On the command line, run “git clone” + the SSH key you copied earlier. A new folder will be created containing a local copy of the repository linked to the forked repository you created - enter the new directory.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Install the library dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Run: ```npm install```
+Next: ```npm start``` in the terminal to see the HTML page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```Control + C``` is the command to stop running the local server
 
-### `npm run eject`
+## Deployed Link
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+You can also visit the web page at this [link]()
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Preview of Setup and Finished App
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![preview-of-setup](./src/project-board.jpeg)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![preview-of-setup](./src/setup.png)
 
-## Learn More
+![preview-of-app](./src/newsyGif.gif)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Refelctions
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Challenges: I implemented using Hooks for the second time in my developer career and found it a little challenging to grasp when and where to use them. I also found it challenge knowing exactly what skills to showcase for a potential employer based off a small amount of time and small spec. 
 
-### Code Splitting
+Wins: Making web applications using React is getting easier and more seamless. After the initail struggle when data does not display how I think it should, I enoy working through the process to make it work!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Technologies Used:
+React | Cypress | API | CSS | JSX
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Countributors:
+  
+Devynne Marshall ([LinkedIn](https://www.linkedin.com/in/devynnemarshall/) || [github](https://github.com/Devynnem))  
