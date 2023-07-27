@@ -18,13 +18,14 @@ function ArticleCards({ articles, onArticleClick }) {
         </Link> 
       </div>
     )
-  })
+  });
+
   return (
     <div className='articles-container'>
         {articleDetails}
     </div>
-  )
-}
+  );
+};
 
 
 

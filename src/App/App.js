@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { mockData } from '../mockData';
 import '../ArticleCards/ArticleCards'
 import './App.css';
 import ArticleCards from '../ArticleCards/ArticleCards';
@@ -14,8 +13,6 @@ function App() {
   const [filteredArticle, setFilteredArticle] = useState([]);
   const [showNoResultsMessage, setShowNoResultsMessage] = useState(false);
 
-
-
   const searchResults = (searchValue) => {
     let lowerCaseSearchValue = searchValue.toLowerCase();
     return initialArticles.filter(
@@ -26,7 +23,6 @@ function App() {
   };
 
   const resetResults = (event) => {
-    // event.preventDefault()
     setFilteredArticle([])
     setArticles(initialArticles)
   };
@@ -52,11 +48,10 @@ function App() {
       const thisData = data.articles.map(article => {
         return article
       })
-      console.log(thisData)
       setArticles(thisData);
       setInitialArticles(thisData);
     } catch (error) {
-      console.log(error, "fetch");
+      throw new Error(`${error.status}`)
     }
   }
 
@@ -67,12 +62,7 @@ function App() {
   const handleArticleClick = (index) => {
     const article = articles[index];
     setSelectedArticle(article);
-    console.log(selectedArticle, "in app")
   };
-
-  // useEffect(() => {
-  //   console.log(selectedArticle, "in app");
-  // }, [selectedArticle]);
 
   const handleSearch = (searchValue) => {
     if (searchValue.trim() !== "") {
@@ -90,11 +80,11 @@ function App() {
     }
   };
 
-  
-
   return (
     <main className='app'>
-      <h1 className='header'>Newsy</h1>
+      <Link to="/" style={{ textDecoration: 'none', color: "#2f2f2f" }} className='header-link'>
+        <h1 className='header'>📰 Newsy☕️</h1>
+      </Link>
       <Search search={handleSearch} reset={resetResults} />
       {showNoResultsMessage && <p className='no-results'>Sorry, no results found!</p>}
       <Routes>
@@ -102,8 +92,8 @@ function App() {
         <Route path="/articles/:index" element={selectedArticle ? <SingleArticle article={selectedArticle} /> : null} />
       </Routes>
     </main>
-  )
-}
+  );
+};
 
 
 export default App;

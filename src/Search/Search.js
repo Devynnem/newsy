@@ -12,12 +12,12 @@ const Search = (props) => {
   }
   const clearInputs = () => {
     setQuery('')
-  }
+  };
 
   const handleBackToAll = () => {
     props.reset();
     navigate('/')
-  }
+  };
 
   return (
     <div className='search-container'>
@@ -35,8 +35,8 @@ const Search = (props) => {
       </form>
       <button className="back-to-all-button" id="backToAll" onClick={handleBackToAll}>Back to All Articles</button>
     </div>
-  )
-}
+  );
+};
 
 
 export default Search;

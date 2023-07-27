@@ -30,8 +30,8 @@ function ArticleDetails({ title, image, date, description }) {
           )}
       </span>
     </div>
-  )
-}
+  );
+};
 
 
 export default ArticleDetails;

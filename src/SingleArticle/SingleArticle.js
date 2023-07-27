@@ -5,7 +5,6 @@ import noImage from '../noImage.png';
 
 
 const SingleArticle = ({ article }) => {
-  console.log(article.title, 'singleArticle')
   return (
     <div className='single-article'>
       <h2>{article.title}</h2>
@@ -23,8 +22,8 @@ const SingleArticle = ({ article }) => {
         Read more
       </a>
     </div>
-  )
-}
+  );
+};
 
 
 
